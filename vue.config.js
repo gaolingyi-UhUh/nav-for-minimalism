@@ -1,7 +1,7 @@
 
 module.exports = {
 
-  publicPath: '/',
+  publicPath: 'business_simple_navigation/',
   productionSourceMap: false,
   devServer: {
     open: true, //配置自动启动浏览器
