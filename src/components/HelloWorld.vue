@@ -207,9 +207,8 @@ export default {
   .menu {
     max-width: 300px;
   }
-  .nav[data-v-469af010] {
+  .nav {
     position: static;
-
     transform: translate(0, 0);
   }
   .menu {

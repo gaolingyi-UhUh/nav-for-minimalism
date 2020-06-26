@@ -2,7 +2,7 @@
   <div id="app" v-cloak>
     <header>
       <a
-        href="https://github.com/AIYMC/"
+        href="https://github.com/gaolingyi-UhUh/navforminimalism"
         target="_blank"
         class="github-corner"
         style="position:fixed;top:0;right:0;"
