@@ -7,7 +7,7 @@
       </div>
       <div class="menu">
         <div class="item show" v-for="(item,i) in menuList" @click="jump(item)">
-          <div class="close el-icon-circle-close" @click.stop="del(item,i)"></div>
+          <div class="close el-icon-circle-close" @click.stop="del(i)"></div>
           <div class="ico">
             <img :src="`${getIco(item.url)}/favicon.ico`" alt />
           </div>
@@ -94,6 +94,7 @@ export default {
         cancelButtonText: "取消",
         type: "warning"
       }).then(() => {
+        console.log(index);
         this.menuList.splice(index, 1);
         localStorage.setItem("l", JSON.stringify(this.menuList));
       });
