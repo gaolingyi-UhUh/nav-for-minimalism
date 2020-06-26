@@ -95,6 +95,7 @@ export default {
         type: "warning"
       }).then(() => {
         this.menuList.splice(index, 1);
+        localStorage.setItem("l", JSON.stringify(this.menuList));
       });
     }
   },
