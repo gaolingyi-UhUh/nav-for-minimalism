@@ -52,6 +52,10 @@ export default {
             required: true,
             message: "请输入网址",
             trigger: "blur"
+          },
+          {
+            message: "您缺少了'http'或'https'",
+            type: "url"
           }
         ]
       }
