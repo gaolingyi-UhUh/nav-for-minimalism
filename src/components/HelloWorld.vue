@@ -95,9 +95,7 @@ export default {
     }
   },
   created() {
-    console.log("created");
     let list = JSON.parse(localStorage.getItem("l"));
-    console.log(list);
     this.menuList = !!list
       ? list
       : [
@@ -105,7 +103,7 @@ export default {
           { name: "百度", url: "https://www.baidu.com/" },
           { name: "写代码啦", url: "https://xiedaimala.com/" }
         ];
-    this.$set(list, "menuList");
+    this.$set(this.menuList, "menuList");
   }
 };
 </script>

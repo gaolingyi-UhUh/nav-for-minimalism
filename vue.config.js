@@ -1,7 +1,9 @@
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
 
-  publicPath: '/navforminimalism/dist',
+  // publicPath: isProduction ? '/navforminimalism/dist' : '/',
+  publicPath: './',
   productionSourceMap: false,
   devServer: {
     open: true, //配置自动启动浏览器
