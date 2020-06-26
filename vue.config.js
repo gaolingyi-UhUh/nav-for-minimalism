@@ -45,12 +45,6 @@ module.exports = {
     }
   },
   chainWebpack: config => {
-    config
-      .plugin('html')
-      .tap(args => {
-        args[0].title = '123'
-        return args
-      })
     config.module
       .rule("images")
       .test(/\.(jpg|png|gif)$/)
