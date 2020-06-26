@@ -7,7 +7,7 @@
       </div>
       <div class="menu">
         <div class="item show" v-for="(item,i) in menuList" @click="jump(item)">
-          <div class="close el-icon-circle-close" @click.stop="del(i)"></div>
+          <div class="close el-icon-circle-close" @click.stop="del(item,i)"></div>
           <div class="ico">
             <img :src="`${getIco(item.url)}/favicon.ico`" alt />
           </div>
@@ -88,8 +88,9 @@ export default {
     jump(item) {
       window.location.href = item.url;
     },
-    del(index) {
-      this.$confirm("确定删除?", "提示", {
+    del(item, index) {
+      let { name, url } = item;
+      this.$confirm(`确定删除${name || url}?`, "提示", {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning"

@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "push": "git push"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "element-ui": "^2.13.2",

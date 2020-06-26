@@ -1,8 +1,6 @@
 
 module.exports = {
-
   publicPath: './',
-  outputDir: 'docs',
   productionSourceMap: false,
   devServer: {
     open: true, //配置自动启动浏览器
